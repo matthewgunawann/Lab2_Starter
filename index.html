@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Team Meeting Minutes</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Meeting minutes for our first team meeting" />
+    <link rel="icon" href="images/imageLab2.jpg" />
+  </head>
+  <body>
+
+    <header>
+      <h1>Team Meeting Minutes</h1>
+      <nav>
+        <a href="#attendance">Attendance</a> |
+        <a href="#agenda">Agenda</a> |
+        <a href="#old-business">Old Business</a> |
+        <a href="#new-business">New Business</a> |
+        <a href="#misc">Misc</a> |
+        <a href="#media">Media</a> |
+        <a href="#form">Feedback</a>
+      </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+        <h2>Pomodoro Timer - First Brainstorm</h2>
+        <p><span><b>Date:</b></span> April 10, 2026</p>
+        <p><b>Meeting location:</b> Center Hall</p>
+        <p><i>Initial brainstorming meeting</i></p>
+        <hr />
+        </section>
+
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <p><strong>Present:</strong></p>
+        <ul>
+          <li>Matthew Gunawan <em>(note taker)</em></li>
+          <li>Luis Kim</li>
+          <li>Kim Park</li>
+          <li>Zhao Wan</li>
+        </ul>
+        <p><strong>Absent:</strong></p>
+        <ul>
+          <li>Alex Liu <em>(excused)</em></li>
+        </ul>
+        <hr />
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Introductions and role assignments</li>
+          <li>Review project requirements</li>
+          <li>Brainstorm features</li>
+          <li>Assign tasks for next meeting</li>
+        </ol>
+        <hr />
+      </section>
+
+      <section id="old-business">
+        <h2>Old Business</h2>
+        <p>This was our first meeting so there was no old business.</p>
+        <details>
+          <summary>Pre-meeting Discord discussion</summary>
+          <p>We voted on project ideas before the meeting. Pomodoro timer won with 4/5 votes.</p>
+        </details>
+        <hr />
+      </section>
+
+      <section id="new-business">
+        <h2>New Business</h2>
+
+        <h3>Features We Want</h3>
+        <ul>
+          <li>25 min work</li>
+          <li>Customizable durations</li>
+          <li>Task checklist</li>
+          <li>Sound notifications </li>
+        </ul>
+
+        <h3>Role Assignments</h3>
+        <ol>
+          <li><b>Matthew</b> - Backend</li>
+          <li><b>Luis</b> - Frontend</li>
+          <li><b>Kim</b> - Database</li>
+          <li><b>Zhao</b> - Testing</li>
+          <li><b>Derek</b> - Docs</li>
+        </ol>
+
+        <h3>Whiteboard Diagram</h3>
+        <div>
+          <img src="images/imageLab2.jpg" alt="Images about our project" width="500" />
+          <br />
+        </div>
+        <hr />
+      </section>
+
+      <section id="misc">
+        <h2>Misc / Q&amp;A</h2>
+        <p>
+          <b>Q:</b> How was your day?<br />
+          <b>A:</b> TBD, will ask TA at office hours.
+        </p>
+        <p>
+          <b>Note:</b> Next meeting should be recorded since Derek missed this one.
+        </p>
+        <hr />
+      </section>
+
+      <section id="media">
+        <h2>Recordings</h2>
+        <p>Audio:</p>
+        <audio controls>
+          <source src="images/audioLab2.mp4" type="audio/mp4" />
+          Your browser does not support audio.
+        </audio>
+        <p>Video:</p>
+        <video controls width="500">
+          <source src="images/videoLab2.mp4" type="video/mp4" />
+          Your browser does not support video.
+        </video>
+        <hr />
+      </section>
+
+      <section id="form">
+        <h2>Meeting Feedback</h2>
+        <form>
+          <fieldset>
+            <legend>Your Info</legend>
+            <p>
+              <label for="name">Name:</label><br />
+              <input type="text" id="name" name="name" />
+            </p>
+            <p>
+              <label for="date">Date attended:</label><br />
+              <input type="date" id="date" name="date" />
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>How was the meeting?</legend>
+            <label><input type="radio" name="rating" value="good" /> Good</label><br />
+            <label><input type="radio" name="rating" value="ok" /> Okay</label><br />
+            <label><input type="radio" name="rating" value="bad" /> Bad</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Topics covered well:</legend>
+            <label><input type="checkbox" name="topic" value="features" /> Features</label><br />
+            <label><input type="checkbox" name="topic" value="stack" /> Tech stack</label><br />
+            <label><input type="checkbox" name="topic" value="roles" /> Roles</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>More Details</legend>
+            <p>
+              <label for="role">Your role:</label><br />
+              <select id="role" name="role">
+                <option value="">-- pick one --</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="database">Database</option>
+                <option value="testing">Testing</option>
+                <option value="docs">Docs</option>
+              </select>
+            </p>
+            <p>
+              <label for="fav">Best topic discussed:</label><br />
+              <input type="text" id="fav" name="fav" list="suggestions" />
+              <datalist id="suggestions">
+                <option value="Feature brainstorm" />
+                <option value="Tech stack" />
+                <option value="Role assignments" />
+              </datalist>
+            </p>
+            <p>
+              <label for="comments">Comments:</label><br />
+              <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+            </p>
+          </fieldset>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <hr />
+      <p>Notes by <strong>Matthew Gunawan</strong> | <a href="mailto:mgunawan@ucsd.edu">mgunawan@ucsd.edu</a></p>
+      <p><em>Next meeting: April 17, 2026</em></p>
+    </footer>
+
+  </body>
+</html>
